@@ -1,19 +1,19 @@
 experiences:
 
-- place: "University of Washington"
-  time: "2023 - now"
-  title: "Assistant Professor"
-  subtitle: "Information School"
-  category: "work"
-
-- place: "Stanford"
-  time: "2020 - 2023"
-  title: "Postdoc"
+- place: "Janus Henderson Investors"
+  time: "2025 - now"
+  title: "Summer intern"
   subtitle: "MS&E"
   category: "work"
 
-- place: "MIT"
-  time: "2014 - 2020"
-  title: "Ph.D. Student"
-  subtitle: "Media Lab, Laboratory for Social Machines"
+- place: "American Century Investments"
+  time: "2024 - 2024"
+  title: "Trading Intern"
+  subtitle: "Trading desk @ ACI"
+  category: "work"
+  
+- place: "University of Kansas"
+  time: "2022 - now"
+  title: "Student"
+  subtitle: "Math and Economics"
   category: "school"
