@@ -191,3 +191,130 @@ h4 {
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
 }
+
+/* ================ ENHANCED ANIMATIONS & MOBILE ================ */
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hover-effect {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Enhanced Mobile Navigation */
+@media (max-width: 767px) {
+  .mobile-menu-toggle {
+    display: flex !important;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .navbar {
+    position: relative;
+  }
+  
+  .navbar-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navbar-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+    margin: 0;
+  }
+  
+  .navbar-list.mobile-open {
+    display: block !important;
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  .navbar-item {
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+    margin: 0;
+  }
+  
+  .navbar-item:last-child {
+    border-bottom: none;
+  }
+  
+  .navbar-link {
+    padding: 15px 20px !important;
+    display: block;
+    border-radius: 0;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+  }
+  
+  .social-links {
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .footer-social {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .main-description {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .header .three.columns,
+  .header .nine.columns {
+    width: 100% !important;
+    margin-left: 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced Dark Mode Integration */
+[data-theme="dark"] .profile-image {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .project-container:hover {
+  box-shadow: 0 8px 25px rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .hamburger-line {
+  background: var(--text-color);
+}
+
+[data-theme="dark"] .navbar-list {
+  background: var(--navbar-bg);
+  border-color: var(--border-color);
+}
+
